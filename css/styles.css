@@ -69,7 +69,7 @@ body {
   justify-content: space-between;
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 768px) {
   .current::after {
     content: '';
     position: absolute;
