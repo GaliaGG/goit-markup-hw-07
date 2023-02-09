@@ -27,7 +27,7 @@
         <nav class="main-nav">
           <a href="./index.html" class="logo link">Web<span class="logo-header">Studio</span></a>
 
-          <div class="mob-menu is-open" data-mobile-menu>
+          <div class="menu">
             <ul class="list nav-list">
               <li class="nav-item">
                 <a href="./index.html" class="link nav-title primary-acent current">Studio</a>
@@ -41,11 +41,6 @@
             </ul>
           </div>
         </nav>
-        <button type="button" class="button-menu" aria-expanded="false" data-mobile-menu-open>
-          <svg width="32" height="22" class="svg-menu" aria-label="switch mobile menu">
-            <use href="./images/icons.svg#icon-menu"></use>
-          </svg>
-        </button>
 
         <address class="nav-address">
           <a href="mailto:info@devstudio.com" class="link contact primary-acent"
@@ -53,6 +48,77 @@
           >
           <a href="tel:+110001111111" class="link contact primary-acent">+11 (000) 111-11-11</a>
         </address>
+
+        <button type="button" class="button-menu" width="32" height="22" data-menu-open>
+          <svg width="32" height="22" class="svg-menu" aria-label="switch mobile menu">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile -->
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container container-menu">
+          <button type="button" class="button-close" data-menu-close>
+            <svg width="8" height="8" class="svg-close" aria-label="switch mobile menu">
+              <use href="./images/icons.svg#icon-close-btn"></use>
+            </svg>
+          </button>
+
+          <nav>
+            <ul class="list mob-menu-list">
+              <li class="mob-menu-item">
+                <a href="./index.html" class="link mob-title primary-acent">Studio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="./portfolio.html" class="link mob-title primary-acent">Portfolio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="" class="link mob-title primary-acent">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="mob-contact">
+            <address class="mob-menu-address">
+              <a href="tel:+110001111111" class="link mob-tel">+11 (000) 111-11-11</a>
+              <a href="mailto:info@devstudio.com" class="link mob-mail">info@devstudio.com</a>
+            </address>
+
+            <ul class="list team-social">
+              <li>
+                <a class="link social-link" href="" aria-label="Link instagram">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-team-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="link social-link" href="" aria-label="Link twitter">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-team-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="link social-link" href="" aria-label="Link facebook">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-team-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="link social-link" href="" aria-label="Link linkedin">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-team-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- End Mobile -->
       </div>
     </header>
 
@@ -138,6 +204,7 @@
                 class="img"
                 src="./images/photo-with-monitor.jpg"
                 alt="Photo with monitor"
+                srcset="./images/photo-with-monitor.jpg 1x, ./images/photo-with-monitor@2x.jpg 2x"
                 width="360"
               />
             </li>
@@ -146,6 +213,7 @@
                 class="img"
                 src="./images/photo-with-phone.jpg"
                 alt="Photo with phone"
+                srcset="./images/photo-with-phone.jpg 1x, ./images/photo-with-phone@2x.jpg 2x"
                 width="360"
               />
             </li>
@@ -154,6 +222,11 @@
                 class="img"
                 src="./images/phone-in-the-hands-of-a-person.jpg"
                 alt="Phone in the hands of a person"
+                srcset="
+                  ./
+                  images/phone-in-the-hands-of-a-person.jpg    1x,
+                  ./images/phone-in-the-hands-of-a-person@2x.jpg 2x
+                "
                 width="360"
               />
             </li>
@@ -171,6 +244,7 @@
                 class="img team-img"
                 src="./images/team-mark.jpg"
                 alt="Smiling man with a beard"
+                srcset="./images/team-mark.jpg 1x, ./images/team-mark@2x.jpg 2x"
                 width="264"
               />
               <div class="team-card">
@@ -213,6 +287,7 @@
                 class="img team-img"
                 src="./images/team-tom.jpg"
                 alt="A young man looks to the side"
+                srcset="./images/team-tom.jpg 1x, ./images/team-tom@2x.jpg 2x"
                 width="264"
               />
               <div class="team-card">
@@ -255,6 +330,7 @@
                 class="img team-img"
                 src="./images/team-camila.jpg"
                 alt="Brunette in a pink sweater"
+                srcset="./images/team-camila.jpg 1x, ./images/team-camila@2x.jpg 2x"
                 width="264"
               />
               <div class="team-card">
@@ -297,6 +373,7 @@
                 class="img team-img"
                 src="./images/team-dan.jpg"
                 alt="Smiling young man"
+                srcset="./images/team-dan.jpg 1x, ./images/team-daniel@2x.jpg 2x"
                 width="264"
               />
               <div class="team-card">
