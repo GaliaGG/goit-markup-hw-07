@@ -868,10 +868,10 @@ body {
   border-color: var(--button-acent);
 
   /* background-image: url(../images/checkbox-click.svg);
-    background-size: 10px 8px;
-    background-position: 3px 4px;
-    background-repeat: no-repeat;
-    background-origin: border-box; */
+  background-size: 10px 8px;
+  background-position: 3px 4px;
+  background-repeat: no-repeat;
+  background-origin: border-box; */
 }
 
 /* Button */
