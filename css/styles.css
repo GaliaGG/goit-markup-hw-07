@@ -44,6 +44,16 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1158px) {
+  .container-spec {
+    max-width: 582px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
@@ -354,7 +364,7 @@ body {
   .hero-section {
     padding-top: 188px;
     padding-bottom: 188px;
-    width: 1440px;
+    max-width: 1440px;
   }
 
   @media (min-device-pixel-ratio: 2) and (min-width: 769px),
@@ -384,7 +394,7 @@ body {
   margin-bottom: 72px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 318px;
+  max-width: 320px;
 
   color: var(--white);
 }
@@ -628,10 +638,13 @@ body {
 
 .team-item {
   margin-bottom: 72px;
+  margin-left: auto;
+  margin-right: auto;
   background: #ffffff;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  max-width: 260px;
 }
 
 .team-list :nth-child(4) {
@@ -804,10 +817,6 @@ body {
   .footer-section > .flex-container {
     flex-direction: row;
     flex-wrap: wrap;
-  }
-
-  .footer-section {
-    padding-left: 108px;
   }
 }
 
@@ -1150,10 +1159,12 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
+  overflow: scroll;
 }
 
 .modal {
-  width: 392px;
+  max-width: 392px;
+  width: 90%;
   min-height: 586px;
   background-color: var(--modal-color);
   padding-top: 72px;
@@ -1161,9 +1172,9 @@ body {
   padding-left: 16px;
   padding-right: 16px;
   position: absolute;
-  top: 50%;
+  top: 96px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1176,6 +1187,8 @@ body {
     width: 408px;
     padding-left: 23px;
     padding-right: 25px;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -1272,7 +1285,7 @@ body {
 }
 
 .contact-input {
-  width: 360px;
+  width: 100%;
   height: 40px;
   padding-left: 38px;
   padding-top: 0;
@@ -1310,7 +1323,7 @@ body {
 }
 
 .contact-textarea {
-  width: 360px;
+  width: 100%;
   height: 120px;
   resize: none;
   padding-top: 8px;
